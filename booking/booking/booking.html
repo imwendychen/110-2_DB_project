@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Booking Area</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link type="text/css" rel="stylesheet" href="booking.css">    
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    </head>
+    <body>
+        <section class="columns">
+            <div class="card is-two-fifths is-offset-4 mt-5 mb-6 column">
+                <h1 class="has-text-centered is-centered has-text-weight-bold is-size-3">BOOKING HERE</h1>
+                <div class="card-header"><header class="card-header-title">Make Your Fast Reserve</header></div>
+                <div class="card-content">
+                    <form action="book_review.php" method="POST">
+                        <div class="field">
+                                <label for="" class="has-text-weight-bold">Your Name</label>
+                            <p class="control has-icons-left has-icons-right">
+                                <input class="input" type="text" placeholder="Your Name" name="name">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-users"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="field">
+                                <label for="" class="has-text-weight-bold">Store Address</label>
+                            <p class="control has-icons-left has-icons-right">
+                                <input class="input" type="text" placeholder="Address" name="sID">
+                                <span class="icon is-small is-left">
+                                <i class="fas fa-location-arrow"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="field">
+                                <label for="" class="has-text-weight-bold">Person Amount</label><br>
+                                <div class="select is-link mt-4">
+                                    <select name="person_AMT" id="person_AMT">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                    </select>
+                                </div>
+                            
+                        </div>
+                        <!-- <div class="time">
+                            <label for="" class="has-text-weight-bold">Choose a time for your appointment:</label>
+                            <p class="control has-icons-left has-icons-right">
+                            <input type="datetime-local" id="meeting-time" value="2022-05-01T00:00"
+                            min="2022-05-01T00:00" max="2030-12-31T00:00" name="bTime">
+                        </div> -->
+                        <script>
+                            $(document).ready(function(){
+
+                                    var dtToday = new Date();
+                                    var month = dtToday.getMonth()+1;
+                                    var day = dtToday.getDate();
+                                    var year = dtToday.getFullYear();
+                                    if(month<10){
+                                        month = '0' +month.toString();
+                                    }
+                                    if(day<10){
+                                        day = '0' + day.toString();
+                                    }
+                                    var maxDate = year +'-'+ month +'-'+ day;
+                                    $('#datelimit').attr('min',maxDate);
+                               
+                            })
+
+                            function to(){
+                                localStorage.removeItem("per");
+                                localStorage.removeItem("poltrone");
+                                var person_tol = document.getElementById("person_AMT").value;
+                                localStorage.setItem("textvalue",person_tol);
+                                
+                                return false;
+                            }
+
+                        </script>
+                        <div class="time">
+                            <label for="" class="has-text-weight-bold">Choose a time for your appointment:</label>
+                            <p class="control has-icons-left has-icons-right">
+                            <input type="date" name="bTime" id="datelimit" >
+                            </p>
+                            <p class="text">
+                                Your period : <span id="period" >0</span> 
+                                / Seat Number : <span id="seatNum">0</span> 
+                                <input type="hidden" name="period" id="period2">
+                                <input type="hidden" name="seatNum" id="seatNum2">
+                            </p> 
+                        </div>
+
+                        <script>
+                            var pe  = localStorage.getItem("textvalue2");
+                            setInterval(() => {
+                                document.getElementById("period").innerHTML = localStorage.getItem("textvalue2");
+                                $("#period2").val(localStorage.getItem("textvalue2"));
+                                document.getElementById("seatNum").innerHTML = localStorage.getItem("textvalue3");
+                                $("#seatNum2").val(localStorage.getItem("textvalue3"))
+                                console.log($("#seatNum2").val())
+                            }, 5000);
+
+                            
+                        </script>
+
+                        <a href="table.php"><input type="button" value="Choose Your Time And Seat(s)" onclick="to()"/></a>
+
+                        <div class="mt-3">
+                            <label for="" class="has-text-weight-bold">Add Your Extra Wishes</label><br>
+                            <textarea name="other" class="textarea"></textarea>
+                        </div>
+                        <button name="btn" id="btn2" class="button is-success is-fullwidth mt-5 mb-6" >submit</button>
+                    </form>              
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
