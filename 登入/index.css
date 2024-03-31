@@ -1,0 +1,395 @@
+* {
+    position: relative;
+}
+
+.btn-group {
+    color: rgba(248, 204, 110, 0.445);
+}
+
+.namecard {
+    width: 420px;
+    height: 270px;
+    padding: 10px;
+    margin-left: -55px;
+    margin-top: 150px;
+    background-color: #FFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 3px #B4BEC9;
+    transition: all 0.4s ease 0s;
+}
+
+.namecard1 {
+    width: 420px;
+    height: 270px;
+    padding: 10px;
+    margin-left: -55px;
+    margin-top: 230px;
+    float: left;
+    background-color: #FFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 3px #B4BEC9;
+    transition: all 0.4s ease 0s;
+}
+
+.namecard:hover {
+    box-shadow: 10px 10px 10px 3px #ddc5a1;
+    transform: translateY(-7px);
+}
+
+.namecard1 h3 {
+    padding-left: 50px;
+    font-family: Calibri;
+    font-size: 20px;
+    color: #10454F;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.namecard1 h6 {
+    font-weight: bold;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    font-size: 15px;
+    color: rgb(107, 81, 42);
+}
+
+.showimg {
+    width: 420px;
+    display: block;
+    margin: auto;
+}
+
+.namecard h2 {
+    padding-left: 30px;
+    font-family: Calibri;
+    font-size: 35px;
+    color: #10454F;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.namecard h5 {
+    font-weight: bold;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding-left: 360px;
+    font-size: 15px;
+    color: rgb(107, 81, 42);
+}
+
+.namecard1 {
+    width: 420px;
+    height: 270px;
+    padding: 10px;
+    margin-left: -55px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: #FFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 3px #B4BEC9;
+    transition: all 0.4s ease 0s;
+}
+
+.namecard1:hover {
+    box-shadow: 10px 10px 10px 3px #ddc5a1;
+    transform: translateY(-7px);
+}
+
+.namecard2 {
+    width: 420px;
+    height: 270px;
+    padding: 10px;
+    margin-left: -55px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: #FFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 3px #B4BEC9;
+    transition: all 0.4s ease 0s;
+}
+
+.namecard1 h2 {
+    padding-left: 30px;
+    font-family: Calibri;
+    font-size: 35px;
+    color: #10454F;
+    font-weight: 900;
+}
+
+.namecard1 h5 {
+    font-weight: bold;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding-left: 360px;
+    font-size: 15px;
+    color: rgb(107, 81, 42);
+}
+
+.namecard2 {
+    width: 420px;
+    height: 270px;
+    padding: 10px;
+    margin-left: 250px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: #FFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 3px #B4BEC9;
+    transition: all 0.4s ease 0s;
+}
+
+.like {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    color: rgb(107, 81, 42);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.postonhome1{
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.namecard3 {
+    width: 420px;
+    height: 270px;
+    padding-top: 10px;
+    margin-left: 30px;
+    margin-top: 300px;
+    margin-bottom: 200px;
+    background-color: #FFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 3px #B4BEC9;
+    transition: all 0.4s ease 0s;
+}
+
+.namecard3:hover {
+    box-shadow: 10px 10px 10px 3px #ddc5a1;
+    transform: translateY(-7px);
+}
+
+.namecard3 h3 {
+    padding-left: 20px;
+    font-family: Calibri;
+    font-size: 20px;
+    color: #10454F;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.namecard2:hover {
+    box-shadow: 10px 10px 10px 3px #ddc5a1;
+    transform: translateY(-7px);
+}
+
+.namecard2 h3 {
+    padding-left: 50px;
+    font-family: Calibri;
+    font-size: 20px;
+    color: #10454F;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.post_option {
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(107, 81, 42);
+    top: -40px;
+    text-align: center;
+}
+
+.logout {
+    font-weight: bold;
+    font-size: 17px;
+    color: rgb(107, 81, 42);
+    z-index: 100;
+}
+
+.logout1 {
+    font-weight: bold;
+    margin-left: 343px;
+    font-size: 17px;
+    color: rgb(107, 81, 42);
+    z-index: 100;
+}
+
+.logoutdiv {
+    margin-left: 317px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #F29F05;
+    position: absolute;
+    top: -50px;
+    right: 80px;
+}
+
+.circle2 {
+    border: solid 8px #F2E7DC;
+}
+
+.circle3 {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-color: #F2E7DC;
+    position: absolute;
+    top: 215px;
+    right: -10px;
+}
+
+.colTitle {
+    font-weight: bold;
+    line-height: 1.5;
+    color: rgb(107, 81, 42);
+}
+
+.register {
+    margin-top: 80px;
+    font-weight: bold;
+    text-align: center;
+    color: #10454F;
+}
+
+.register1 {
+    margin-top: 70px;
+    font-weight: bold;
+    text-align: center;
+    color: #10454F;
+}
+
+.register2 {
+    margin-top: 150px;
+    font-weight: bold;
+    text-align: center;
+    color: #10454F;
+}
+
+input {
+    width: 240px;
+}
+
+select {
+    width: 240px;
+}
+
+.userInfo {
+    margin-top: -5px;
+    margin-left: 20px;
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    color: #10454F;
+    font-weight: bold;
+}
+
+.member {
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: bold;
+    color: #10454F;
+}
+
+.texttext {
+    height: 2em;
+    width: 100%;
+    border: 1px solid #000;
+    outline-style: none;
+    border-width: 0 0 1 0px;
+    display: block;
+    margin: auto;
+}
+
+.account {
+    text-align: left;
+    margin-top: -25px;
+}
+
+.account1 {
+    text-align: left;
+    margin-top: 25px;
+}
+
+.formbox {
+    margin-top: 65px;
+}
+
+.formbox1 {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+main {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.button {
+    margin-top: 55px;
+    margin-bottom: 55px;
+    width: 300px;
+    height: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #b59059;
+    box-shadow: 0px 15px 20px #ddc5a1;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.welcome {
+    margin-top: -30px;
+}
+
+a {
+    color: #b59059;
+    text-decoration: none;
+}
+
+#magnifier {
+    bottom: -30px;
+}
+
+@media (max-width: 375px) {
+    main {
+        width: 200px;
+    }
+    .button {
+        width: 200px;
+        height: 50px;
+    }
+}
