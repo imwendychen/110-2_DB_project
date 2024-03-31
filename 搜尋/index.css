@@ -1,0 +1,10 @@
+.table thead th{
+    width: 500px;
+    white-space: nowrap;
+}
+
+.table td, .table th{
+    width: 500px;
+    padding: 0px;
+    white-space: nowrap;
+}
